@@ -35,7 +35,7 @@
     "vue-draggable-resizable": "^2.3.0",
     "vue-i18n": "^8.27.1",
     "vuedraggable": "^2.24.3",
-    "wh-component": "^2.0.90",
+    "wh-component": "^2.0.92",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {

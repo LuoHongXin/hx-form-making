@@ -1,85 +1,26 @@
 # yuejizuo-form-making
 
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-yarn serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
 
 ```
-yarn build
+npm run build
 ```
 
-### Run your unit tests
-
-```
-yarn test:unit
-```
-
-### Run your end-to-end tests
-
-```
-yarn test:e2e
-```
-
-### Lints and fixes files
-
-```
-yarn lint
-```
-### npm 依赖包
-
-```
-npm i --save react@latest
-```
-
-### yarn 依赖包
-
-```
-yarn add react@latest
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### 安装 gulp
-
-yarn add gulp gulp-autoprefixer gulp-clean-css gulp-less gulp-rename --dev 测试没有成功！
-
-## 打包上传 npm 流程
-
-1. 修改更新版本
-   - 在 package.json 里 version 将版本号改为 0.0.1，等我们做完了再改成 1.0.0
-2. 执行 npm run lib 或者 yarn run lib
-3. 维护 README.md 的更新日志
-4. 如果第一次上传 npm
-
-   - npm config set registry http://192.168.100.10:31445/repository/npmhosted.org/
-   - 在命令行中登录 npm login
-
-   ```
-    name:deployer
-    password:deployer
-    email: 随意(建议用公司邮箱)
-   ```
-
-5. 发布 npm publish
-6. npm push
 
 ### npm run lib
 
 这条命令会生成一个 lib 文件夹，将所有的组件打包。然后 npm publish 发布到 npm 仓库。
 
-### npm run pack
-
-这条命令会在本地生成一个.tgz 的文件。执行 cnpm i /path/to/xxx.tgz 文件就可以在本地安装并测试自己封装的组件库了。
 
 <div id="myLog">
 
@@ -171,7 +112,7 @@ yarn add gulp gulp-autoprefixer gulp-clean-css gulp-less gulp-rename --dev 测�
 -- 新增标题和分割线组件
 
 ## contributor
-- luohongxin <kami126@aliyun.com>
+- luohongxin <954108736@qq.com>
 
 </div>
 

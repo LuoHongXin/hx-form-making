@@ -1,0 +1,57 @@
+.y-form-list {
+    background-color: #fff;
+    max-height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+
+    // 无数据时效果
+    &.no-data {
+        min-height: 360px;
+
+        .mk-form-list {
+            min-height: 360px;
+        }
+
+        .y-form-label-item {
+            height: 74px;
+        }
+    }
+
+    .y-form-label-item {
+        background-color: #f0f6ff;
+        width: 100%;
+    }
+
+    .mk-form-list {
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .no-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            width: 160px;
+            height: 120px;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #454852;
+        }
+    }
+}

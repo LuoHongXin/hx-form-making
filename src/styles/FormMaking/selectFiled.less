@@ -1,0 +1,74 @@
+.select-filed {
+    .ant-radio-group {
+        display: flex;
+
+        .y-radio-content-box {
+            flex: 1;
+
+            .y-radio-content {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 高级组件
+.combination-form-item.mk-form-item,
+.table-form-item.mk-form-item {
+    .flex-form-item {
+        margin-bottom: 0;
+
+        .ant-form-item-label {
+            padding: 16px 0;
+        }
+
+        // 子组件展示label
+        .showLabel {
+            .ant-form-item-label {
+                padding: 0;
+            }
+
+            .ant-form-item-control-wrapper {
+                width: 83.33333333%;
+                float: left;
+            }
+        }
+
+        // 纵向布局
+        &.vertical-mode {
+            .mk-form-item-list {
+                display: block;
+            }
+        }
+
+        .mk-form-item-list {
+            display: flex;
+            flex: 1;
+            padding: 8px;
+            min-height: 88px;
+            align-items: center;
+
+            .mk-form-item {
+                flex: 1;
+
+                &.drag-form-item {
+                    .y-form-item {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .mk-form-item-list {
+        min-height: 32px;
+    }
+}
+
+.table-form-item.mk-form-item {
+    .mk-form-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

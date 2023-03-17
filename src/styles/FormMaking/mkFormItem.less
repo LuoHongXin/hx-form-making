@@ -1,0 +1,207 @@
+.mk-form-item {
+    cursor: move;
+    padding: 8px;
+    position: relative;
+
+    .hiddenDropdown {
+        display: none;
+    }
+
+    // 纵向排序
+    .vertical-mode {
+        .ant-form-item-children {
+
+            // 单选框
+            .ant-radio-group.y-radio-group {
+                display: block;
+                width: 100%;
+
+                .y-radio-content-box {
+                    display: block;
+                    margin-right: 0 !important;
+                    margin-bottom: 8px;
+
+                    .y-radio-title {
+                        overflow: hidden;
+                        width: 100%;
+                        display: block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+
+            // 复选框
+            .y-link-tag {
+                width: 100%;
+
+                .y-link-tag-list {
+                    display: block;
+                    width: 100%;
+
+                    .y-tag-item {
+                        margin-right: 0;
+                        margin-bottom: 8px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .ant-form-item-children {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .y-select,
+        .y-input,
+        .y-textarea,
+        .y-date-picker,
+        .y-month-picker,
+        .y-range-picker,
+        .y-week-picker,
+        .y-file-upload {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .y-file-upload {
+            flex: unset;
+            position: relative;
+
+            .file-upload-text {
+                position: absolute;
+                top: 0;
+                left: 122px;
+                font-weight: 400;
+                font-size: 14px;
+                color: #83878f;
+            }
+        }
+
+        .y-textarea {
+            overflow: inherit;
+        }
+
+        // 单选框
+        .ant-radio-group.y-radio-group {
+            display: flex;
+            flex: 1;
+
+            .y-radio-content-box {
+                flex: 1;
+                margin-bottom: 0;
+
+                .y-radio-content {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            // 换行
+            &.line-feed {
+                flex-wrap: wrap;
+
+                .y-radio-content-box {
+                    flex: unset;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        // 复选框
+        .y-link-tag {
+            flex: 1;
+
+            .y-link-tag-list {
+                .y-tag-item {
+                    flex: 1;
+                    text-align: center;
+                    margin-bottom: 0;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            // 换行
+            &.line-feed {
+                .y-link-tag-list {
+                    flex-wrap: wrap;
+
+                    .y-tag-item {
+                        flex: unset;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+
+        .y-btn.ant-btn.action-button {
+            width: 32px;
+            height: 32px;
+            margin-left: 16px;
+        }
+
+        .y-svg-icon.light-tips-check {
+            width: 16px;
+            height: 16px;
+            margin-left: 16px;
+        }
+    }
+
+    .ant-form-item-label>label::after,
+    .ant-form-item-required::before {
+        display: none;
+    }
+
+    .ant-form-item-label>.ant-form-item-required::after {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+    }
+
+    &.selected {
+        background-color: #f0f6ff;
+
+        &>.operate-list {
+            display: block;
+        }
+    }
+
+    &:not(.selected):hover {
+        background-color: #f5f5f5;
+    }
+
+    .operate-list {
+        display: none;
+        background: #ffffff;
+        /* 投影 / 悬浮 S1 朝下 */
+        cursor: pointer;
+        z-index: 2;
+        box-shadow: 0px 1px 2px -2px rgba(36, 41, 46, 0.04), 0px 2px 4px rgba(36, 41, 46, 0.08);
+        padding: 4px;
+        position: absolute;
+        right: -4px;
+        top: -4px;
+
+        .anticon {
+            font-size: 14px;
+        }
+
+        .y-divider {
+            margin: 0 4px;
+        }
+    }
+}

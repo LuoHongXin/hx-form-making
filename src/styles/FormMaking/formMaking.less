@@ -1,0 +1,45 @@
+.y-form-making {
+    // display: flex;
+    position: relative;
+
+    .form-left,
+    .form-right {
+        width: 280px;
+        background-color: #fff;
+        padding: 24px;
+        overflow: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            color: #1f2229;
+            margin-bottom: 16px;
+        }
+
+        .y-form-label-item-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    .form-left {
+        left: 0;
+    }
+
+    .form-right {
+        right: 0;
+    }
+
+    .form-center {
+        // flex: 1;
+        background-color: #f2f2f2;
+        padding: 24px;
+        margin: 0 280px;
+        height: 100%;
+    }
+}

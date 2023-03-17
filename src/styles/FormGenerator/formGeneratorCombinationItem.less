@@ -1,0 +1,78 @@
+.yjz-form-generator-combination-item {
+
+
+
+    &.y-form-item.ant-form-item {
+        margin-bottom: 0;
+    }
+
+    // 子组件展示label
+    .showLabel {
+        .ant-form-item-label {
+            padding: 0;
+        }
+
+        .ant-form-item-control-wrapper {
+            width: 83.33333333%;
+            float: left;
+        }
+    }
+
+    // 纵向布局
+    &.vertical-mode {
+        .ant-form-item-children {
+            display: block;
+
+            .yjz-form-generator-item {
+                margin-right: 0;
+            }
+        }
+
+    }
+
+    .ant-form-item-children {
+        display: flex;
+
+        .yjz-form-generator-item {
+            flex: 1;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        // 按钮
+        .y-btn.ant-btn.action-button,
+        .y-btn.ant-btn.delete-button {
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        // 轻提示
+        .y-svg-icon.light-tips-check {
+            width: 16px;
+            height: 16px;
+            transform: translateY(50%);
+        }
+    }
+
+    // 前后冒号星号
+    .ant-form-item-label>label::after,
+    .ant-form-item-required::before {
+        display: none;
+    }
+
+    .ant-form-item-label>.ant-form-item-required::after {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+    }
+}
